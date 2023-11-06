@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'tiendacrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tiendacruddb',
+        'NAME': 'tiendacrud',
         'USER': 'root',
-        'PASSWORD': 'B@gr0551',
+        'PASSWORD': 'Chocolate2015',
         'HOST': 'localhost',
         'PORT': '3306'
     }
