@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'producto',
 ]
 
-CSRF_TRUSTED_ORIGIN = ['https://tienda-crud-db-e8cfcb01a935.herokuapp.com']
+CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
