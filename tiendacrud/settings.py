@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'producto',
 ]
 
+CSRF_TRUSTED_ORIGIN = ['https://tienda-crud-db-e8cfcb01a935.herokuapp.com']
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
