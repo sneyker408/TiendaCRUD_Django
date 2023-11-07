@@ -23,6 +23,31 @@
 
 6. Instala MySQL con el comando -> pip install PyMySQL
 
+6. Instala MySQL con el comando -> pip install whitenoise
+
+6. Instala MySQL con el comando -> pip install waitress 
+
+6. Comando para crear nuestro archivo Requirements.txt -> pip freeze > requirements.txt 
+
+6. crar un archivo de configuracion adentro carpeta raiz para la  configuración de Heroku -> Procfile
+
+6. codificamos un comando dentro de el archivo Procfile -> web: waitress-serve --port=$PORT tiendacrud.wsgi:application
+
+
+
+agregar el host de heroku al proyecto y lo pegamos en setting.py en -> ALLOWED_HOSTS = ['https://tienda-crud-db-e8cfcb01a935.herokuapp.com']
+
+
+6. editamos en settings.py el -> MIDDLEWARE = [
+                                            'whitenoise.middleware.WhiteNoiseMiddleware',
+                                           ]
+
+7. tambien al final del archivo settings.py creamos un array llamado -> STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+8. en el settings.py el array debug cambiarlo a -> false
+
+9. agregar una dependencia en el settings.py que debajo del debug -> 
+
 7. Instala cryptography con el comando -> pip install cryptography
 
 8. nos dirigimos a la aplicacion de MySQL y los creaamos una base de datos llamado TiendaArgorithDB->
