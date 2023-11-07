@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_protect
 from .models import Producto
 from .forms import ProductoForm
 
@@ -15,6 +16,7 @@ def listadoProductos(request):
     productos = Producto.objects.all()
     return render(request,'producto/productos.html', {'productos': productos})
 
+@csrf_protect
 def crearProducto(request):
     formulario = ProductoForm(request.POST or None)
 
